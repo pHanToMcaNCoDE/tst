@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+:root {
+
+    /* Fonts */
+    --pop: 'Poppins';
+    --ub: 'Ubuntu';
+    --av: 'Avenir';
+
+    /* Colors */
+    --ash1: #888787;
+    --ash2: #f1f1f1e5;
+    --pk: #FF75A0;
+    --w: #ffffff;
+    --blk: #000000;
+    --m: #e9e5e0;
+    --ash3: #f9fafc;
+    --cr: crimson;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1330px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+/********************************************* 
+# Navigation 
+**********************************************/
+nav {
+    position: sticky;
+    height: 70px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--w);
+    /* border: 1px solid var(--blk); */
+}
+
+nav .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .max-width .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .max-width ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .max-width ul li {
+    list-style: none;
+}
+
+nav .max-width ul li a {
+    margin-left: 60px;
+    color: var(--blk);
+    font-family: var(--pop), sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+nav .max-width .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .max-width .icons svg {
+    margin-left: 30px;
+}
+
+/**************************************************** 
+# Header section 
+******************************************************/
+
+.reg {
+    height: 22vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.7)), url('/assets/reg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.reg .max-width {
+    display: flex;
+}
+
+.reg .max-width .content {
+    position: absolute;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    top: 12%;
+    left: 45%;
+}
+
+.reg .max-width .content .img {
+    align-items: center;
+    margin-left: 30%;
+    margin-bottom: 3%;
+}
+
+.reg .max-width .content .txt {
+    text-align: center;
+}
+
+.reg .max-width .content .txt h2 {
+    margin-bottom: 5%;
+    /* text-align: center; */
+    font-family: var(--ub), sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--blk);
+}
+
+.reg .max-width .content .txt p {
+    /* text-align: center; */
+    font-family: var(--pop), sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--ash1);
+}
+
+/***************************************** 
+# Form Styling 
+******************************************/
+.form {
+    height: 75vh;
+    padding: 100px 0px;
+    background-color: var(--ash3);
+}
+
+.form .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.form .max-width .login {
+    background-color: var(--w);
+    width: 43%;
+    height: 50vh;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 5%;
+}
+
+.form .max-width .login h2 {
+    font-size: 25px;
+    font-family: var(--ub), sans-serif;
+    font-weight: 600;
+    color: var(--blk);
+    padding-bottom: 3%;
+    margin-left: 9%;
+    margin-top: 4%;
+    /* text-align: center; */
+}
+
+.form .max-width .login .row {
+    display: block;
+}
+
+.form .max-width .login .row .content {
+    display: block;
+}
+
+.form .max-width .login .row .content label {
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 3%;
+}
+
+.form .max-width .login .row .content input {
+    padding: 15px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid var(--ash1);
+    width: 120%;
+    margin-bottom: 5%;
+    font-size: 17px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.form .max-width .login .remind {
+    display: flex;
+}
+
+.form .max-width .login .remind input {
+    margin-top: 3%;
+    margin-left: 8%;
+}
+
+.form .max-width .login .remind p {
+    margin: 2% 0 0 2%;
+}
+
+.form .max-width .login .remind p {
+    font-family: var(--pop), sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--ash1);
+}
+
+.form .max-width .login .forgot {
+    margin: 2% 0 0.2% 10%;
+}
+
+.form .max-width .login .forgot a {
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+}
+
+.form .max-width .login .btn input {
+    padding: 15px 8%;
+    background-color: var(--pk);
+    color: var(--w);
+    border: 1px solid var(--pk);
+    margin-top: 3%;
+    margin-left: 8%;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+.form .max-width .register {
+    background-color: var(--w);
+    width: 43%;
+    height: 50vh;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .max-width .register h2 {
+    font-size: 25px;
+    font-family: var(--ub), sans-serif;
+    font-weight: 600;
+    color: var(--blk);
+    padding-bottom: 3%;
+    margin-left: 9%;
+    margin-top: 4%;
+}
+
+.form .max-width .register .max-width {
+    display: block;
+}
+
+.form .max-width .register .max-width .row {
+    display: block;
+}
+
+.form .max-width .register .max-width .row .content {
+    display: block;
+    /* margin-left: 3%; */
+}
+
+.form .max-width .register .max-width .row .content label {
+    font-family: var(--av), sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 3%;
+}
+
+.form .max-width .register .max-width .row .content input {
+    padding: 15px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid var(--ash1);
+    width: 100%;
+    margin-bottom: 3%;
+    font-size: 17px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.form .max-width .register .btn input {
+    padding: 15px 8%;
+    background-color: var(--pk);
+    color: var(--w);
+    border: 1px solid var(--pk);
+    margin-top: .5%;
+    margin-left: 10%;
+    font-size: 17px;
+    border-radius: 8px;
+}
+
+
+/* Footer section */
+
+.footer {
+    height: 35vh;
+    background-color: var(--m);
+}
+
+.footer .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer .max-width h3 {
+    font-size: 17px;
+    font-family: var(--pop), sans-serif;
+    font-weight: 300;
+    color: var(--ash1);
+    padding: 1rem;
+}
+
+.footer .max-width .links {
+    display: block;
+}
+
+.footer .max-width .links h4 {
+    font-size: 16px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: var(--ash1);
+}
+
+.footer .max-width .links ul li {
+    list-style: none;
+}
+
+.footer .max-width .links ul li a {
+    font-size: 17px;
+    color: var(--blk);
+    margin-top: 2rem;
+    font-family: var(--pop), sans-serif;
+    font-weight: 300;
+}
+
+.footer .max-width .help {
+    display: block;
+}
+
+.footer .max-width .help h4 {
+    font-size: 16px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: var(--ash1);
+}
+
+.footer .max-width .help ul li {
+    list-style: none;
+}
+
+.footer .max-width .help ul li a {
+    font-size: 17px;
+    color: var(--blk);
+    margin-top: 2rem;
+    font-family: var(--pop), sans-serif;
+    font-weight: 300;
+}
+
+.footer .max-width .newsletter {
+    display: block;
+}
+
+.footer .max-width .newsletter h4 {
+    font-size: 16px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: var(--ash1);
+}
+
+.footer .max-width .newsletter .input {
+    display: flex;
+}
+
+.footer .max-width .newsletter .input input {
+    width: 18vw;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--blk);
+    background-color: var(--m);
+}
+
+.footer .max-width .newsletter .input input:focus {
+    border-left-color: var(--m);
+    border-right-color: var(--m);
+    border-top-color: var(--m);
+}
+
+.footer .max-width .newsletter .input a {
+    margin-left: 1rem;
+    color: var(--ash1);
+    font-size: 17px;
+    font-family: var(--ub), sans-serif;
+}
+
+.footer .max-width .newsletter ul li a {
+    font-size: 17px;
+    color: var(--blk);
+    margin-top: 1rem;
+    font-family: var(--pop), sans-serif;
+    font-weight: 300;
+}
+
+.footer .max-width .newsletter h4 {
+    font-size: 20px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: var(--ash1);
+}
+
+.footer .line {
+    content: '';
+    position: absolute;
+    left: 30px;
+    width: 95vw;
+    height: 1px;
+    background-color: var(--ash1);
+}
+
+.footer .down {
+    margin: 3%;
+}
+
+.footer .down p {
+    color: var(--ash1);
+    font-weight: 300;
+    font-family: var(--pop), sans-serif;
+    font-size: 16px;
+    text-align-last: left;
+}
